@@ -17,12 +17,11 @@
   text-decoration: none !important;
 }
 .card-product .card-body .price-text {
-  margin: 16px 0 0 0;
+  margin: 0;
 }
 .product-add-to-cart {
   color: darkseagreen;
-  margin: 10px 0 0 30px;
-  font-size: 29px;
+  font-size: 24px;
 }
 .product-add-to-cart:hover {
   cursor: pointer;
@@ -40,7 +39,17 @@
 .card-product .card-body .price-wrap {
   display: flex;
 }
+.card-text {
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+.rate {
+  margin-left: auto;
+  display: flex;
+  align-content: flex-end;
 
+}
 @media screen and (max-width: 767px) {
   .card-img-wrap {
     margin: 0 auto;
@@ -59,4 +68,7 @@
   .card-img-top {
     width: 90%;
   }
+}
+.mr-20 {
+  margin-right: 20px;
 }

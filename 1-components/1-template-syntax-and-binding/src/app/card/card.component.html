@@ -1,16 +1,17 @@
 <div class="card-product ">
   <div class="card-img-wrap">
-    <img class="card-img-top" />
+    <img class="card-img-top" [src]="product.images[0].url" [alt]="product.name" />
   </div>
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.description}}</p>
     <div class="price-wrap">
       <p class="price-text">
-        <strong></strong>
+        <strong>{{product.price}}</strong>
       </p>
       <div class="rate">
-        <span class="rate-amount ml-2"></span>
-        <mat-icon class="product-add-to-cart"></mat-icon>
+        <span class="rate-amount mr-20">Рейтинг: {{product.rating}}</span>
+        <mat-icon class="product-add-to-cart mr-20" (click)="addProduct()" aria-hidden="false" aria-label="Добавить в корзну">add_shopping_cart</mat-icon>
       </div>
     </div>
   </div>
