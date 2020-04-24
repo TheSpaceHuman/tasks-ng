@@ -8,7 +8,7 @@ import { products, IProduct } from '../src/mocks/products';
 })
 export class AppComponent {
   public products: IProduct[] = products;
-  public addProduct(): void {
+  public addProduct(product: IProduct): void {
     console.log('added');
   }
 }

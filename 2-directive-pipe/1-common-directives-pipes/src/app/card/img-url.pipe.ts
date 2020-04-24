@@ -4,7 +4,11 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'imgUrl',
 })
 export class ImgUrlPipe implements PipeTransform {
-  transform(): string {
-    return ``;
+  transform(images: any): string {
+    let promoImage = ''
+   if(images.length > 0) {
+     promoImage = images[0].url
+   }
+   return promoImage
   }
 }
